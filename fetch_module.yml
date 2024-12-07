@@ -1,0 +1,8 @@
+---
+ - name: we are fatching file on manage host machine
+   hosts: all
+   tasks:
+     - fetch:
+         src: /root/arvind.txt
+         dest: /root/
+

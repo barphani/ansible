@@ -1,0 +1,5 @@
+---
+ - name: i am creating httpd webserver with use role for ansible
+   hosts: all
+   roles:
+     - robertdebock.httpd

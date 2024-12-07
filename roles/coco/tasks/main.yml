@@ -1,0 +1,14 @@
+---
+ - user:
+     name: "{{item.name}}"
+     uid: "{{item.uid}}"
+     groups: "{{item.group}}"
+     comment: "{{item.comment}}"
+     state: present
+   loop: "{{item_variable}}" 
+
+ - yum:
+     name: httpd
+     state: present
+   notify: target_handlers
+

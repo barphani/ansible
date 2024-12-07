@@ -1,0 +1,14 @@
+---
+ - name: we are creating a new playbook
+   hosts: INDIA
+   tasks:
+     - user:
+         name: tyty
+         state: present
+       register: user_output
+
+     - debug:
+         var: user_output
+
+       
+   

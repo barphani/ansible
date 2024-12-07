@@ -1,0 +1,20 @@
+---
+ - name: we are creating playbook for vault-password
+   hosts: INDIA
+   vars_files:
+     - vault.yml
+   tasks:
+     - user:
+         name: "{{vuser_1}}"
+         groups: "{{vsgroup_1}}"
+         state: present
+         
+ - name: we are creating playbook for vault file for other machine
+   hosts: UBUNTU  
+   vars_files:
+     - vault.yml
+   tasks:
+     - apt:
+         name: "{{vpackage_1}}" 
+         state: present
+   

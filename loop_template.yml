@@ -1,0 +1,15 @@
+---
+ - name: we will use loop in jinja2 template
+   hosts: INDIA,AMERICA
+   vars:
+     - users:
+         - name: idrees
+           role: trainer
+         - name: gaurav
+           role: ceo
+         - name: rupesh
+           role: senior-trainer
+   tasks:
+     - template:
+         src: ./loop.j2
+         dest: /root/loop.txt

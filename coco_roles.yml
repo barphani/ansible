@@ -1,0 +1,5 @@
+---
+ - name: we are creating a playbook for testing roles
+   hosts: all
+   roles:
+     - coco

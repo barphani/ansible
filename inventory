@@ -1,0 +1,12 @@
+[INDIA]
+coco1.example.com   
+
+[AMERICA]
+coco2.example.com   
+
+[coco:children]
+INDIA
+AMERICA
+
+[UBUNTU]
+coco3.example.com

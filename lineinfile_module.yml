@@ -1,0 +1,8 @@
+---
+ - name: i am adding line on all manage hosts machine
+   hosts: all
+   tasks:
+     - lineinfile:
+         path: /root/arvind.txt
+         line: 'this file create to arvind habu'
+

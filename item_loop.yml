@@ -1,0 +1,11 @@
+---
+ - name: i am creating playbook for item and loop testing purpose
+   hosts: all
+   tasks:
+     - user:
+         name: "{{item.name}}"
+         uid: "{{item.uid}}"
+         groups: "{{item.group}}"
+         comment: "{{item.comment}}"
+         state: present
+       loop: "{{loop_item}}"

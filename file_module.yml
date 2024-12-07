@@ -1,0 +1,11 @@
+---
+ - name: i am creating file on manage host machine to using file_module
+   hosts: all
+   tasks:
+     - file:
+         path: /root/arvind.txt
+         mode: '775'
+         owner: root
+         group: root
+         state: touch
+        

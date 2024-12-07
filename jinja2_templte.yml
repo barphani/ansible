@@ -1,0 +1,7 @@
+---
+ - name: i am creating jinja2 template
+   hosts: all
+   tasks:
+     - template:
+         src: ./copy.j2
+         dest: /root/

@@ -1,0 +1,14 @@
+---
+ - name: we are creating playbook with variable
+   hosts: all
+   vars:
+     user_1: q1
+     group_1: a1
+   tasks:
+     - user:
+         name: "{{user_1}}"
+         state: present
+     - group:
+         name: "{{group_1}}"
+         state: present
+

@@ -1,0 +1,8 @@
+---
+- name: Manage with custom advanced settings
+  hosts: all
+  vars:
+    timesync_ntp_servers:
+      - hostname: 0.in.pool.ntp.org
+  roles:
+    - rhel-system-roles.timesync

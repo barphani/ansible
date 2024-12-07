@@ -1,0 +1,7 @@
+---
+ - name: i am copying file control node to manage host
+   hosts: all
+   tasks:
+     - copy:
+         src: ./hello.copy
+         dest: /root/

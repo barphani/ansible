@@ -1,0 +1,9 @@
+loop_item:
+  - name: qq
+    uid: '1120' 
+    group: yyy
+    comment: 'this is testing purpose'
+  - name: ww
+    uid: '1121' 
+    group: yyy
+    comment: 'this item is very cool'

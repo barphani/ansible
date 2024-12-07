@@ -1,0 +1,14 @@
+---
+ - name: we are creating playbook for notify to hit handlers
+   hosts: all
+   tasks:
+     - yum:
+         name: httpd
+         state: present
+       notify: restart httpd
+   handlers:
+     - name: restart httpd
+       service: 
+         name: httpd
+         state: restarted
+         enabled: yes

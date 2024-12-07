@@ -1,0 +1,6 @@
+item_variable:
+  - name: fd
+    uid: '4001'
+    group: arvind
+    comment: 'this file usese for roles and loop_item roles'
+     

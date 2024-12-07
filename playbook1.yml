@@ -1,0 +1,15 @@
+---
+ - name: i am creating a playbook for user creation on multipul server
+   hosts: INDIA
+   tasks:
+     - user:
+         name: rksing
+         state: present
+
+ - name: we are creating 2nd play for user creation on america server
+   hosts: AMERICA
+   tasks:
+     - user:
+         name: tinku
+         state: present
+
